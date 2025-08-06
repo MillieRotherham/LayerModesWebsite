@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer Modes</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Title font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <!--Font for content-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="lighten-page">
+
+        <!--Header-->
+        <div class="header">
+            <H1>Lighten Modes</H1>
+        </div>
+
+        <!--Navbar-->
+        <div class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="darken.html">Darken</a></li>
+                <li><a href="lighten.html">Lighten</a></li>
+                <li><a href="contrast.html">Contrast</a></li>
+                <li><a href="difference.html">Difference</a></li>
+                <li><a href="colour.html">Colour</a></li>
+            </ul>
+        </div>
+
+        <!--Body with information-->
+        <div class="body">
+
+            <!--Explains what layer modes in this catagory do-->
+            <h2>What are Lighten Modes?</h2>
+            <p>Lighten layer modes do what they say, lightening the base image in different ways. 
+                They are often used to add highlights or lighten the whole image.                 
+            </p>
+            
+            <!--Screen layer explained-->
+            <h2>Screen</h2>
+            <div class="layer">
+                <img src="Images\screenDiagram.png" alt="Example of screen layer in use">
+                <p>This is the most commonly used layer mode to lighten images. 
+                    How it works is by multiplying the inverse of the two layers, which is the opposite of multiply.
+                    The result image is always lighter, because it is multipying the light pixels instead of the darker. 
+                    Screening with black will produce no difference, and if the top layer is white the final image will be as well.
+                    This mode is good for erasing any blacks while keeping the whites, and also making glow effects. 
+                </p>
+            </div>
+            
+            <!--Add layer explained-->
+            <h2>Add / Linear Dodge</h2>
+            <div class="layer">
+                <img src="Images\addDiagram.png" alt="Example of add layer in use">
+                <p>This layer mode can be call Add or Linear Dodge, it will depend on the program you're using. It is going to be called Add here.
+                    Add works by brightening the base colour to reflect the top colour by increasing the brightness. 
+                    It 'Adds' the luminince levels (how bright and dark parts of the image are).
+                    It is brighter than Colour Dodge but less intense and saturated.
+                    Blending with black produces no difference. 
+                </p>
+            </div>
+
+            <!--Add Glow layer explained-->
+            <h2>Add (Glow)</h2>
+            <div class="layer">
+                <img src="Images\addGlowDiagram.png" alt="Example of Add (Glow) layer in use">
+                <p>This layer works like the Add layer, increasing the brightness of colours by adding the colours of the blend layer to the base layer. 
+                    This creates a stronger effect than the normal Add colour mode. 
+                    As can be seen in the example, Add Glow has less shadows and more vibrant midtones than the normal Add / Linear Dodge. 
+                    It is more effective in semi transperent areas, which is not something shown in this example. 
+                </p>
+            </div>
+
+            <!--Colour Dodge layer explained-->
+            <h2>Colour Dodge</h2>
+            <div class="layer">
+                <img src="Images\colourDodgeDiagram.png" alt="Example of colour dodge layer in use">
+                <p>To lighten images this layer mode brightens the base layer to relect the blend colour. 
+                    It does this by decreasing the contrast between the two layers. 
+                    This results in saturated mid tones, as can be seen on the land of the example. 
+                    It is one of the lighten modes that produces the most saturation, however it has more pronounced shadows than Glow Dodge. 
+                    If the top layer is black there will be no change to the bottom image. 
+
+                </p>
+            </div>
+
+            <!--Glow Dodge layer explained-->
+            <h2>Glow Dodge</h2>
+            <div class="layer">
+                <img src="Images\glowDodgeDiagram.png" alt="Example of glow dodge layer in use">
+                <p>It both lightens the base image and decreases the contrast, which creates very saturated mid tones and extremely bright highlights.
+                    This layer mode has the most vibrant colours, and it does not preserve the shadows of the image like colour dodge does,
+                    instead making them very saturated as can be seen in the example. 
+                </p>
+            </div>
+
+            <!--Lighten layer explained-->
+            <h2>Lighten</h2>
+            <div class="layer">
+                <img src="Images\lightenDiagram.png" alt="Example of lighten layer in use">
+                <p>Lighten compares all of the colour values seperatly and choses the lightest. 
+                    It picks the lighter colours of the two layers, replacing darker colours. 
+                    Because it looks at all of the colour values seperately, this means that is will create a third colour occasionally unlike Lighter Colour.
+                    As you can see in the example image it produces a less harsh transition between colours than Lighter Colour.
+                    It is functionally the opposite of Darken, choosing lighter instead of darker colours. 
+                </p>
+            </div>
+
+            <!--Lighter colour layer explained-->
+            <h2>Lighter colour</h2>
+            <div class="layer">
+                <img src="Images\lighterColourDiagram.png" alt="Example of lighter colour layer in use">
+                <p> This layer mode compares the total of all values for the blend and base color and displays the higher value color.
+                    It creates sharp edges with the replacement, and no third colour unlike Lighten. 
+                    This is because it looks at all of the colour values as a whole, and not as individual colours. 
+                    This is effectively the opposite of the darker colour layer mode, and it can be used for similar things, 
+                    like replacing large blocks of colour with a lighter colour. 
+                </p>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <h3>Other websites</h3>
+            <p>If you want to look at more websites there are many other great ones for various programs. 
+                <br>
+                <a href="https://www.ctrlpaint.com/">Ctrl+Paint</a> for videos on various digital art skills and techniques. 
+                <br>
+                <a href="https://www.clipstudio.net/how-to-draw/archives/154182">Art Rocket</a> for more tips on different layer modes in Clip Studio Paint. 
+                <br>
+                The <a href="https://helpx.adobe.com/nz/photoshop/using/blending-modes.html">Adobe website</a> for help with Photoshop layer modes
+                or <a href="https://photoblogstop.com/photoshop/photoshop-blend-modes-explained/">this one</a>. 
+                <br>
+                And <a href="https://www.sketch.com/blog/blend-modes/">another website</a> with helpful examples of layer modes
+                or this <a href="https://www.youtube.com/playlist?list=PL0YyTWKOid7FJ9mGR_i8bBCTptEb01Hqc">Youtube playlist</a>.
+            </p>
+
+            <h3>Credits</h3>
+            <p>All of the images on this page are my own, that I have created for this website.</p>
+        </div>
+        
+
+</div> 
+</body>
+</html>

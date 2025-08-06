@@ -1,0 +1,229 @@
+body {
+    background-color: #033746;
+}
+
+/*All of the grid layouts for various pages*/
+.home-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 14fr 3fr;
+    margin: 0 auto;
+}
+
+.darken-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 16fr 3fr;
+    margin: 0 auto;
+}
+
+.lighten-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 21fr 3fr;
+    margin: 0 auto;
+}
+
+.contrast-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 21fr 3fr;
+    margin: 0 auto;
+}
+
+.difference-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 13fr 3fr;
+    margin: 0 auto;
+}
+
+.colour-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 13fr 3fr;
+    margin: 0 auto;
+}
+/*End grid layouts for various pages*/
+
+
+/*Things that are the same for all pages - general styling*/
+.header {
+    grid-row: 1;
+    grid-column: 2 / 8;
+    background-color: #205A64;
+}
+
+.nav-bar {
+    grid-row: 2;
+    grid-column: 2 / 8;
+    background-color: #E1C8AC;
+}
+
+.nav-bar ul {
+    margin: 20px 10px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-bar li {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 700%;
+    text-align: center;
+    margin-top: 90px;
+    color: #ffffff;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    margin-left: 30px;
+    font-size: 200%;
+    font-family: "Assistant", sans-serif;
+}
+
+h3 {
+    margin: 10px 20px 0px 30px;
+    font-size: 120%;
+    font-family: "Assistant", sans-serif;
+}
+
+p {
+    background-color: #D5EDE6;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 110%;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-family: "Assistant", sans-serif;
+}
+
+li {
+    display: inline;
+    padding: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: "Assistant", sans-serif;
+}
+
+.cabin-sketch-regular {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*The part with the actual content in it*/
+.body {
+    background-color: #ffffff;
+    grid-row: 3 / 4;
+    grid-column: 2 / 8;
+}
+
+/*The footer*/
+.footer {
+    grid-row: 4 / 5;
+    grid-column: 2 / 8;
+    background-color: #205A64;
+    color: #ffffff;
+}
+
+.footer p {
+    background-color: transparent;
+    border-radius: 0%;
+    padding: 0%;
+    margin-top: 15px;
+}
+
+.footer a {
+    color: #ffffff;
+    font-size: 100%;
+    text-decoration: underline;
+}
+
+/*Home page*/
+.layers-explained-content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.layers-explained-content img {
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 25px;
+}
+
+.layers-explained-content p {
+    max-width: 500px;
+    
+}
+
+.layers-changing-content p {
+    max-width: 1200px;
+    margin-top: 25px;
+}
+
+.program-examples {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.program-examples img {
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.website-explained {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.website-explained img {
+    max-width: 400px;
+    max-height: 100%;
+    border-radius: 25px;
+    margin-top: 5px;
+}
+
+.website-explained p {
+    max-width: 50%;
+    margin-top: 5px;
+}
+
+/*Other pages*/
+
+.layer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 5px;
+}
+
+.layer img {
+    height: 170px;
+    border-radius: 25px;
+    margin: 0%;
+}
+
+.layer p {
+    max-width: 760px;
+    margin: 0%;
+}

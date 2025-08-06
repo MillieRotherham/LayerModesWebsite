@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer Modes</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Title font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <!--Font for content-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="darken-page">
+
+        <!--Header-->
+        <div class="header">
+            <H1>Darken Modes</H1>
+        </div>
+
+        <!--Navbar-->
+        <div class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="darken.html">Darken</a></li>
+                <li><a href="lighten.html">Lighten</a></li>
+                <li><a href="contrast.html">Contrast</a></li>
+                <li><a href="difference.html">Difference</a></li>
+                <li><a href="colour.html">Colour</a></li>
+            </ul>
+        </div>
+
+        <!--Body with information-->
+        <div class="body">
+
+            <!--Explains what layer modes in this catagory do-->
+            <h2>What are Darken Modes?</h2>
+            <p>Darken modes are all layer mode that will darken the original picture in some way. 
+                Some of these do it by selecting the darker colour out of the two layers, and others by combining the channel information. 
+            These layer modes are often used to create shadows or a moody atmosphere. One of the most common one of these is the layer mode multiply.</p>
+
+            <!--Multiply layer explained-->
+            <h2>Multiply</h2>
+            <div class="layer">
+                <img src="Images\multiplyDiagram.png" alt="Example of multiply layer in use">
+                <p>This layer multiplies the top layer by the bottom layer which results in a darker more vibrant tone overall. 
+                    This means that the resulting colour is always darker than the original, and tinted with the blend mode as can be seen in the example.
+                    An important thing to note is that if the blend mode is black, the final image will be black, and if it is white the final will be unchanged.
+                    It is most often used to create shadows on art, due to it both making objects darker and not losing the vibrancy of the piece. 
+                </p>
+            </div>
+
+            <!--Colour burn layer explained-->
+            <h2>Colour Burn</h2>
+            <div class="layer">
+                <img src="Images\colourBurnDiagram.png" alt="Example of colour burn layer in use">
+                <p> This darkens the base color to reflect the blend color by increasing the contrast using the different colours in the artwork.
+                    This layer mode will make the dark colours in your image darker, and also make the whole image more vibrant. 
+                    It is the layer mode that produces the most contrast in this group, and also will preserve the whites on the bottom layer. 
+                    This means that any white will be unaffected by the top layer.
+                </p>
+            </div>
+
+            <!--Linear burn layer explained-->
+            <h2>Linear Burn</h2>
+            <div class="layer">
+                <img src="Images\linearBurnDiagram.png" alt="Example of linear burn layer in use">
+                <p> This layer mode looks at the color information in each channel and darkens the base color to reflect the blend color by decreasing the brightness.
+                    This means that it darkens shadows a lot and makes the final picture more vibrant, similar to Colour Burn. 
+                    However unlike Colour Burn it doesn't keep the light colours as is, darkening them instead of preserving them. 
+                    It also has gives less contrast and colour in the final piece that Colour Burn, making it a good mix between colour burn and multiply.
+                    <!--It is often used for making dark colours and shadows darker, adding texture to dark colours or deepinging colours. - Unused information -->
+                    Something to note is that if the top layer is black, there will be no change to the lower layer.
+                </p>
+            </div>
+
+            <!--Darker colour layer explained-->
+            <h2>Darker Colour</h2>
+            <div class="layer">
+                <img src="Images\darkerColourDiagram.png" alt="Example of darker colour layer in use">
+                <p>Darker Color identifies the overall lower-value color between the two layers and displays it, without creating a third color as opposed to Darken.
+                    This means that it focuses on the image as a whole, creating distinct lines between what is shown on the top and bottom layers.
+                    This layer mode is good for replacing large blocks of colour with another, or replacing elements such as one sky with a darker one. 
+                    The opacity can be lowered for a more subtle effect.</p>
+            </div>
+
+            <!--Darken layer explained-->
+            <h2>Darken</h2>
+            <div class="layer">
+                <img src="Images\darkenDiagram.png" alt="Example of darken layer in use">
+                <p> Darken compares the luminosity of each channel and selects the darker of the two colors.
+                    It opperates on individual channels, which means it has the potential to create a third "blending" colour.
+                    It produces a similar effect to darker colour, however with a softer finish with more blending around the edges.
+                    This is because it can produce a third colour which is similar to the two if the colours are close enough, creating a softer look than darker colour.
+                </p>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <h3>Other websites</h3>
+            <p>If you want to look at more websites there are many other great ones for various programs. 
+                <br>
+                <a href="https://www.ctrlpaint.com/">Ctrl+Paint</a> for videos on various digital art skills and techniques. 
+                <br>
+                <a href="https://www.clipstudio.net/how-to-draw/archives/154182">Art Rocket</a> for more tips on different layer modes in Clip Studio Paint. 
+                <br>
+                The <a href="https://helpx.adobe.com/nz/photoshop/using/blending-modes.html">Adobe website</a> for help with Photoshop layer modes
+                or <a href="https://photoblogstop.com/photoshop/photoshop-blend-modes-explained/">this one</a>. 
+                <br>
+                And <a href="https://www.sketch.com/blog/blend-modes/">another website</a> with helpful examples of layer modes
+                or this <a href="https://www.youtube.com/playlist?list=PL0YyTWKOid7FJ9mGR_i8bBCTptEb01Hqc">Youtube playlist</a>.
+            </p>
+
+            <h3>Credits</h3>
+            <p>All of the images on this page are my own, that I have created for this website.</p>
+        </div>
+
+    </div>
+</body>
+</html>

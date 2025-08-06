@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer Modes</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Title font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <!--Font for content-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="difference-page">
+
+        <!--Header-->
+        <div class="header">
+            <H1>Difference Modes</H1>
+        </div>
+
+        
+        <!--Navbar-->
+        <div class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="darken.html">Darken</a></li>
+                <li><a href="lighten.html">Lighten</a></li>
+                <li><a href="contrast.html">Contrast</a></li>
+                <li><a href="difference.html">Difference</a></li>
+                <li><a href="colour.html">Colour</a></li>
+            </ul>
+        </div>
+
+        <!--Body with information-->
+        <div class="body">
+
+            <!--Explains what layer modes in this catagory do-->
+            <h2>What are Difference Modes?</h2>
+            <p>Difference modes reveal or emphasize the differences between the colors or luminance values of two layers.</p>
+
+            <!--Difference layer explained-->
+            <h2>Difference</h2>
+            <div class="layer">
+                <img src="Images\differenceDiagram.png" alt="Example of difference layer in use">
+                <p>This layer mode subtracts either the base color from the top color or the top color from the base color, 
+                    again depending on which has the greater brightness value.
+                    If you blend with white it will invert the colours of the bottom layer, and like Exclusion if you blend with black there will be no change.
+                    The main difference between this and Exclusion is that there is more contrast between the two, and this is obvious in the example images.
+                    With this blend mode similar colours cancel each other out and the result is black. 
+                </p>
+            </div>
+
+            <!--Exclusion layer explained-->
+            <h2>Exclusion</h2>
+            <div class="layer">
+                <img src="Images\exclusionDiagram.png" alt="Example of Exclusion layer in use">
+                <p>Looks at the color information for each colour and subtracts either the top color from the base color or the base color from the top color, 
+                    depending on which has the greater brightness value. 
+                    This layer mode has almost the same effect as Difference, however it has lower contrast as can be seen in the example image. 
+                    If the top colour has white it will invert the base colours, and blending with black produces no change. 
+                    If there are similar colours in this layer mode they cancel out to be grey.
+                </p>
+            </div>
+            
+            <!--Subtract explained-->
+            <h2>Subtract</h2>
+            <div class="layer">
+                <img src="Images\subtractDiagram.png" alt="Example of subtract layer in use">
+                <p>Subtract subtracts the blend color from the base color for each colour in the image. 
+                    It will cause a substantial darkening of the image, with whites being darkened the most and already dark colours changing little. 
+                    Colour wise, it will take out the colours of the top layer from the bottom layer. 
+                    That can be seen here on the example where there is no more yellow in the picture.
+                    Blacks and whites on the top layer will not change the bottom layer. 
+                </p>
+            </div>
+
+            <!--Divide layer explained-->
+            <h2>Divide</h2>
+            <div class="layer">
+                <img src="Images\divideDiagram.png" alt="Example of divide layer in use">
+                <p>This layer mode looks at each colour and divides the blend color from the base color.
+                    This means that overall, images will become lighter and change colour. 
+                    This is the main difference between Subtract and Divide.
+                    Regarding the colours, it will take out the colours of the top layer from the bottom layer. 
+                    That can be seen here on the example where there is no more yellow in the picture.
+                </p>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <h3>Other websites</h3>
+            <p>If you want to look at more websites there are many other great ones for various programs. 
+                <br>
+                <a href="https://www.ctrlpaint.com/">Ctrl+Paint</a> for videos on various digital art skills and techniques. 
+                <br>
+                <a href="https://www.clipstudio.net/how-to-draw/archives/154182">Art Rocket</a> for more tips on different layer modes in Clip Studio Paint. 
+                <br>
+                The <a href="https://helpx.adobe.com/nz/photoshop/using/blending-modes.html">Adobe website</a> for help with Photoshop layer modes
+                or <a href="https://photoblogstop.com/photoshop/photoshop-blend-modes-explained/">this one</a>. 
+                <br>
+                And <a href="https://www.sketch.com/blog/blend-modes/">another website</a> with helpful examples of layer modes
+                or this <a href="https://www.youtube.com/playlist?list=PL0YyTWKOid7FJ9mGR_i8bBCTptEb01Hqc">Youtube playlist</a>.
+            </p>
+
+            <h3>Credits</h3>
+            <p>All of the images on this page are my own, that I have created for this website.</p>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

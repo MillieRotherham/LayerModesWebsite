@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer Modes</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Title font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <!--Font for content-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="colour-page">
+
+        <!--Header-->
+        <div class="header">
+            <H1>Colour Modes</H1>
+        </div>
+
+        
+        <!--Navbar-->
+        <div class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="darken.html">Darken</a></li>
+                <li><a href="lighten.html">Lighten</a></li>
+                <li><a href="contrast.html">Contrast</a></li>
+                <li><a href="difference.html">Difference</a></li>
+                <li><a href="colour.html">Colour</a></li>
+            </ul>
+        </div>
+
+        <!--Body with information-->
+        <div class="body">
+
+            <!--Explains what layer modes in this catagory do-->
+            <h2>What are Colour Modes?</h2>
+            <p> Colour modes, also known as composite or component modes change how the colour of the top layer interacts with the bottom layer.
+
+            </p>
+
+            <!--Hue layer explained-->
+            <h2>Hue</h2>
+            <div class="layer">
+                <img src="Images/hueDiagram.png" alt="Example of hue layer in use">
+                <p>This will create a final image with the grayscale information and saturation of the base color and the hue of the top color. 
+                    This the colour of the final image is changed to the top colour, while how vibrant and the tones of the original image are retained.
+                    As is seen in the example it looks simply like the image has been remade with the only colour being yellow. 
+                    It is less stronger effect than the Colour layer mode.
+                </p>
+            </div>
+            
+            <!--Saturation layer explained-->
+            <h2>Saturation</h2>
+            <div class="layer">
+                <img src="Images\saturationDiagram.png" alt="Example of saturation layer in use">
+                <p>The result has the highlights, shadows and hue of the base layer, along with the saturation of the blend colour.
+                    This means that most things are kept on the base layer, but the more pure colour the top layer has the more vibrant become the colours of the final image.
+                    If the top layer is grey, white or black there will be no change.
+                    In this example you can see that the saturation has been greatly increased, because the top colour (original as seen on the left) is very saturated. 
+                </p>
+            </div>
+            
+            <!--Colour layer explained-->
+            <h2>Colour</h2>
+            <div class="layer">
+                <img src="Images\colourDiagram.png" alt="Example of colour layer in use">
+                <p>This will keep the colours and saturation of the top layer while using the shadows and highlights of the lower layer. 
+                    It is useful for tinting images with different colours, as can be seen in this example. 
+                    Another thing that it can be used for is colouring monchrome images. 
+                    This is the most common use of the layer mode, and it is useful for that.
+                    Another layer mode that gives a similar, less vibrant effect is the Hue layer mode.
+                </p>
+            </div>
+
+            <!--Luminosity layer explained-->
+            <h2>Luminosity</h2>
+            <div class="layer">
+                <img src="Images\luminosityDiagram.png" alt="Example of Luminosity layer in use">
+                <p>This blend mode gives the image the hue and saturation of the base colour, while retaining the luminince of the top colour.
+                    That means that it keeps the general lightness of the page, while changing the colour of the image. 
+                    It is the inverse effect of the colour mode, which means if you switched the order of the top and bottom layers around and gave the top layer the colour mode, 
+                    you would have the same effect. 
+                </p>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <h3>Other websites</h3>
+            <p>If you want to look at more websites there are many other great ones for various programs. 
+                <br>
+                <a href="https://www.ctrlpaint.com/">Ctrl+Paint</a> for videos on various digital art skills and techniques. 
+                <br>
+                <a href="https://www.clipstudio.net/how-to-draw/archives/154182">Art Rocket</a> for more tips on different layer modes in Clip Studio Paint. 
+                <br>
+                The <a href="https://helpx.adobe.com/nz/photoshop/using/blending-modes.html">Adobe website</a> for help with Photoshop layer modes 
+                or <a href="https://photoblogstop.com/photoshop/photoshop-blend-modes-explained/">this one</a>. 
+                <br>
+                And <a href="https://www.sketch.com/blog/blend-modes/">another website</a> with helpful examples of layer modes
+                or this <a href="https://www.youtube.com/playlist?list=PL0YyTWKOid7FJ9mGR_i8bBCTptEb01Hqc">Youtube playlist</a>.
+            </p>
+
+            <h3>Credits</h3>
+            <p>All of the images on this page are my own, that I have created for this website.</p>
+        </div>
+
+    </div>
+</body>
+</html>

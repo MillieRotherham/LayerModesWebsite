@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer Modes</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Title font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <!--Font for content-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contrast-page">
+
+        <!--Header-->
+        <div class="header">
+            <H1>Contrast Modes</H1>
+        </div>
+        
+        <!--Navbar-->
+        <div class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="darken.html">Darken</a></li>
+                <li><a href="lighten.html">Lighten</a></li>
+                <li><a href="contrast.html">Contrast</a></li>
+                <li><a href="difference.html">Difference</a></li>
+                <li><a href="colour.html">Colour</a></li>
+            </ul>
+        </div> 
+
+        <!--Body with information-->
+        <div class="body">
+
+            <!--Explains what layer modes in this catagory do-->
+            <h2>What are Contrast Modes?</h2>
+            <p>All of the layer modes in the contrast group work by darkening the dark colours and making the lights lighter. 
+                This is done by a combination of techniques from both lightening and darkening techniques.
+                They check if they are brighter than 50% grey, and if brighter apply the brighten technique, if darker the darken technique.
+            </p>
+
+            <!--Overlay layer explained-->
+            <h2>Overlay</h2>
+            <div class="layer">
+                <img src="C:\Users\milli\OneDrive\Documents\Layer Modes Explained\Images\overlayDiagram.png" alt="Example of overlay layer in use">
+                <p>This layer mode will apply the screen effect if the pixels are lighter, and the multiply layer effect if the pixels are darker. 
+                    Any midtones will become transparent.
+                    This is done at half strength so the final result is not as strong as the individual layers themselves.
+                    This means the the top colour overlays the bottom, while keeping the shadows and highlights of the lower layer. 
+                    The base colour is mixed with the top colour, blending the colours of the two. 
+                </p>
+            </div>
+            
+            <!--Soft Light layer explained-->
+            <h2>Soft Light</h2>
+            <div class="layer">
+                <img src="Images\softLightDiagram.png" alt="Example of soft light layer in use">
+                <p>Soft light will use the dodge layer effect if the pixels are lighter, and a burn effect if they are darker.
+                    This means that they produce an effect similar to colour or linear burn on the darker colours.
+                    Likewise, effects similar to the layer modes with dodge in the title in the Lighten catagory.
+                    This causes a much softer and organic effect than overlay, with transperent highlights and shadows. 
+                    It's great for adding soft effects with the top colour mixing with the lower to a lesser degree than overlay.
+                    If the top layer is soild white or black the final will be lightened or darkened to a degree.
+                </p>
+            </div>
+            
+            <!--Hard Light layer explained-->
+            <h2>Hard Light</h2>
+            <div class="layer">
+                <img src="Images\hardLightDiagram.png" alt="Example of hard light layer in use">
+                <p>Uses a mix of the multiply on the darker pixels and screen on the lighter pixels. 
+                    The effect this produces is more intense than the overlay, with stronger highlights and shadows, 
+                    an effect similar to shining a harsh spotlight on the image.
+                    It increases both the contrast and saturation. 
+                    If the top layer is black, so will the final image. If it is white the final image will also be white. 
+                    This layer mode is very similar to Vivid Light, however it does not make the light colours quite as bright and the darks quite as dark.
+                </p>
+            </div>
+
+            <!--Vivid Light layer explained-->
+            <h2>Vivid Light</h2>
+            <div class="layer">
+                <img src="Images\vividLightDiagram.png" alt="Example of Vivid Light layer in use">
+                <p> This layer mode will colour burn or colour dodge the colors depending on if they are lighter or darker than 50% grey.
+                    If they are lighter, the burn method is applied, if darker the dodge method. 
+                    This layer mode has the most contrast out of Hard, Vivid and Linear Light. 
+                    It causes darker shadows and lighter highlights than the other two layer modes.
+                </p>
+            </div>
+
+            <!--Linear Light layer explained-->
+            <h2>Linear Light</h2>
+            <div class="layer">
+                <img src="Images\linearLightDiagram.png" alt="Example of linear light layer in use">
+                <p>Linear burn does the same as Vivid Light, applying the Linear Burn layer technique if the colour is lighter than half grey, 
+                    and the Linear Dodge effect if it is darker. 
+                    The effect that this gives is a little more saturated than Vivid Light and Hard Light. 
+                    As can be seen on the example, the darker colours of the trees are a good example of how much more saturated the layer mode is. 
+                </p>
+            </div>
+            
+            <!--Pin Light layer explained-->
+            <h2>Pin Light</h2>
+            <div class="layer">
+                <img src="Images\pinLightDiagram.png" alt="Example of pin light layer in use">
+                <p>This layer mode uses the Lighten blend mode on the lighter colours and Darken on the darker colours. 
+                    If the top are lighter than 50% grey, pixels that are darker than the blend colour are replaced and visa versa.
+                    It is useful for adding things like special effects to images.
+                    Pin Light can result in large blocks of colour or noise, and it completely removes all mid-tones which can give some interesting effects.
+                </p>
+            </div>
+
+            <!--Hard Mix layer explained-->
+            <h2>Hard Mix</h2>
+            <div class="layer">
+                <img src="Images\hardMixDiagram.png" alt="Example of Hard Mix layer in use">
+                <p>Hard Mix when applied will add the red, green and blue colour values of the top color to the RGB values of the base color.
+                    This basically means that it turns the colours into several different ones those being red, yellow, green, blue, cyan, magenta, or black and white. 
+                    Why the sea is not blue in the example is because it also mixes the top and original layers, and the result colour is closer to yellow than blue. 
+                    This makes an extremely flat saturated effect, not unlike a poster.
+                </p>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <h3>Other websites</h3>
+            <p>If you want to look at more websites there are many other great ones for various programs. 
+                <br>
+                <a href="https://www.ctrlpaint.com/">Ctrl+Paint</a> for videos on various digital art skills and techniques. 
+                <br>
+                <a href="https://www.clipstudio.net/how-to-draw/archives/154182">Art Rocket</a> for more tips on different layer modes in Clip Studio Paint. 
+                <br>
+                The <a href="https://helpx.adobe.com/nz/photoshop/using/blending-modes.html">Adobe website</a> for help with Photoshop layer modes
+                or <a href="https://photoblogstop.com/photoshop/photoshop-blend-modes-explained/">this one</a>. 
+                <br>
+                And <a href="https://www.sketch.com/blog/blend-modes/">another website</a> with helpful examples of layer modes
+                or this <a href="https://www.youtube.com/playlist?list=PL0YyTWKOid7FJ9mGR_i8bBCTptEb01Hqc">Youtube playlist</a>.
+            </p>
+
+            <h3>Credits</h3>
+            <p>All of the images on this page are my own, that I have created for this website.</p>
+        </div>
+
+</div>
+</body>
+</html>
