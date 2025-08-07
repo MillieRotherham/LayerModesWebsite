@@ -175,6 +175,7 @@ a {
 .layers-changing-content p {
     max-width: 1200px;
     margin-top: 25px;
+    align: center;
 }
 
 .program-examples {
@@ -228,3 +229,4 @@ a {
     margin: 0%;
 
 }
+
